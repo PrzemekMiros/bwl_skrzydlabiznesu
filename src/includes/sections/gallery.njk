@@ -1,0 +1,33 @@
+<section class="px-6 md:px-24 py-24 bg-gray-100">
+  <div class="mx-auto max-w-[1200px]">
+    <div class="mb-12 text-center">
+      <h2 class="text-4xl font-semibold uppercase lg:text-6xl">Galeria</h2>
+    </div>
+
+    {% if galleryImages and galleryImages.length %}
+      <div class="grid grid-flow-dense grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-6">
+        {% for image in galleryImages %}
+          {% set mod = loop.index0 % 10 %}
+          {% set tileClass = "col-span-1 aspect-[3/4]" %}
+          {% if mod == 0 or mod == 4 or mod == 7 %}
+            {% set tileClass = "col-span-2 aspect-[16/10]" %}
+          {% endif %}
+
+          <figure class="{{ tileClass }} group relative overflow-hidden rounded-sm">
+            <img
+              src="{{ image.src }}"
+              alt="{{ image.alt }}"
+              class="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/0"></div>
+          </figure>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="text-center text-black/70">Brak zdjec w galerii.</p>
+    {% endif %}
+  </div>
+</section>

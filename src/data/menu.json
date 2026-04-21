@@ -1,0 +1,34 @@
+﻿{
+  "project": "International Businesswoman Awards",
+  "navigation_main": [
+    {
+      "label": "O PLEBISCYCIE",
+      "url": "/o-plebiscycie/"
+    },
+    {
+      "label": "MIEJSCE",
+      "url": "/miejsce/"
+    },
+    {
+      "label": "JURY",
+      "url": "/jury/"
+    },
+    {
+      "label": "WYWIADY",
+      "url": "/interviews/"
+    },
+    {
+      "label": "GALERIA",
+      "url": "/galeria/"
+    },
+    {
+      "label": "MAGAZYN",
+      "url": "https://businesswomanlife.pl/"
+    },
+    {
+      "label": "KONTAKT",
+      "url": "/kontakt/"
+    }
+  ]
+}
+

@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Jury
+description: Archiwum wpisow jury
+permalink: /jury/
+eleventyExcludeFromCollections: true
+---
+
+<section class="mx-auto max-w-[1200px] py-16">
+  <div class="mb-8">
+    <p class="text-sm uppercase tracking-[0.2em] text-[#d4ab71]">Typ postu</p>
+    <h1 class="mt-2 text-3xl font-semibold uppercase tracking-[0.04em] text-[#0b0d1e]">Jury</h1>
+  </div>
+
+  {% set members = collections.jury %}
+  {% if members and members[0] %}
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {% for member in members %}
+        <article class="rounded-2xl border border-black/10 bg-white p-6 shadow-sm">
+          {% set memberImage = (member.data.juryImage or "") | replace("/src/content/", "/content/") | replace("src/content/", "/content/") %}
+          {% if memberImage %}
+            <a href="{{ member.url }}" class="mb-5 block overflow-hidden rounded-2xl">
+              <img src="{{ memberImage }}" alt="{{ member.data.title }}" class="h-[220px] w-full object-cover object-top" loading="lazy" decoding="async" draggable="false" />
+            </a>
+          {% endif %}
+          <h2 class="text-xl font-semibold text-[#0b0d1e]">
+            <a href="{{ member.url }}" class="transition-colors hover:text-[#d4ab71]">{{ member.data.title }}</a>
+          </h2>
+          {% if member.data.person %}
+            <p class="mt-2 text-sm uppercase tracking-[0.08em] text-black/60">{{ member.data.person }}</p>
+          {% endif %}
+          {% if member.data.excerpt %}
+            <p class="mt-4 text-sm leading-6 text-black/80">{{ member.data.excerpt }}</p>
+          {% endif %}
+          <a class="mt-5 inline-block text-sm font-semibold uppercase tracking-[0.08em] text-[#0b0d1e] hover:text-[#d4ab71]" href="{{ member.url }}">
+            Czytaj profil
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-black/70">Brak opublikowanych wpisow jury.</p>
+  {% endif %}
+</section>

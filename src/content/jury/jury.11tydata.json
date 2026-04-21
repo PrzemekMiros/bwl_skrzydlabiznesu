@@ -1,0 +1,5 @@
+{
+  "layout": "jury.njk",
+  "tags": ["jury"],
+  "permalink": "/jury/{{ page.fileSlug }}/"
+}

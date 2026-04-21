@@ -1,0 +1,142 @@
+<section class="pt-24 bg-[#c69a62]">
+  <div class="mx-auto grid max-w-[1600px] grid-cols-1 xl:grid-cols-[45%_55%] gap-12 px-6 md:px-24">
+    <div class="relative overflow-hidden" data-about-slider>
+      <div class="absolute inset-0">
+        <div class="absolute inset-0 opacity-100 transition-opacity duration-700 ease-out" data-about-slide>
+          <img src="/assets/img/about/EDYTA-GORNIAK_POP-scaled.jpg" alt="Palazzo Brancaccio" class="h-full w-full object-cover object-top" draggable="false" /> 
+        </div>
+        <div class="absolute inset-0 opacity-0 transition-opacity duration-700 ease-out" data-about-slide>
+          <img src="/assets/img/about/Aleksandra-Tomiczek-min-scaled.jpg" alt="Rzym - Palazzo Brancaccio" class="h-full w-full object-cover object-top" draggable="false" />
+        </div>
+        <div class="absolute inset-0 opacity-0 transition-opacity duration-700 ease-out" data-about-slide>
+          <img src="/assets/img/about/Beata-Kozidrak-min-scaled.jpg" alt="Sala balowa Palazzo Brancaccio" class="h-full w-full object-cover object-top" draggable="false" />
+        </div>
+        <div class="absolute inset-0 opacity-0 transition-opacity duration-700 ease-out" data-about-slide>
+          <img src="/assets/img/about/BWA_ROMA_0705-scaled.jpg" alt="Roof Garden Hotel Forum" class="h-full w-full object-cover object-top" draggable="false" />
+        </div>
+        <div class="absolute inset-0 opacity-0 transition-opacity duration-700 ease-out" data-about-slide>
+          <img src="/assets/img/about/BWA_ROMA_0470-scaled.jpg" alt="Ogrod Palazzo Brancaccio" class="h-full w-full object-cover object-top" draggable="false" />
+        </div>
+      </div>
+
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20"></div>
+
+      <div class="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2" data-about-dots></div>
+    </div>
+
+    <div
+      class="py-12 text-white xl:py-14"
+      style="background-image:
+        linear-gradient(30deg, rgba(255,255,255,0.08) 1px, transparent 1px),
+        linear-gradient(150deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+        background-size: 135px 78px;"
+    >
+      <h2 class="text-4xl font-semibold uppercase tracking-[0.06em] lg:text-6xl">O konkursie</h2>
+
+      <div class="mt-8 max-w-[980px] space-y-6 text-2 xl leading-[1.45] text-white/95">
+        <p>
+           International Businesswoman Awards to prestiżowe wydarzenie organizowane przez redakcję czasopisma „Businesswoman & life”, podczas którego spośród licznie nadesłanych nominacji nagradzani są najlepsi przedsiębiorcy działający międzynarodowo według najwyższych standardów etyki, wyróżniający się na rynku: profesjonalizmem, jakością, innowacyjnością i pozytywnymi rekomendacjami klientów. Redakcja czasopisma „Businesswoman & life” od 15 lat swojej działalności zorganizowała kilkadziesiąt gal Businesswoman Awards w Warszawie oraz 3 edycje zagraniczne, w Rzymie.
+        </p>
+        <p>
+          Nominacja w prestiżowym konkursie International Businesswoman Awards potwierdza najwyższą jakość świadczonych usług i oferowanych produktów, wzmacnia i utrwala wizerunek najlepszej marki w środowisku biznesowym, wzbudza zaufanie wśród klientów, a także jest uhonorowaniem dotychczasowych dokonań i uprawnia do posługiwania się prestiżowym tytułem. Nominacji towarzyszy szereg działań promocyjnych utrwalających wizerunek firmy w mediach.
+        </p>
+        <p>
+          Podczas tego wyjątkowego wydarzenia będzie można wejść w interakcje z liderami, właścicielami firm, zarówno tych z sektora małych i średnich przedsiębiorstw, jak i znanych na arenie międzynarodowej. 
+        </p>
+        <p>
+          To świetna okazja do wymiany poglądów z cenionymi postaciami świata biznesu. Finałowa gala odbędzie się 22.10.2025 w Rzymie. Ceremonia wręczenia statuetek odbędzie się w Palazzo Brancaccio a uroczysta kolacja w restauracji Roof Garden Hotel Forum.
+        </p>
+      </div>
+
+      <div class="mt-14">
+        <p class="text-4xl font-black uppercase tracking-[0.08em] text-[#161a22]">
+          International
+          <br />
+          Businesswoman Awards to
+        </p>
+        <p class="mt-2 text-4xl font-black uppercase tracking-[0.08em] text-white">Wartosci<span class="text-[#161a22]">|</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const root = document.querySelector("[data-about-slider]");
+    if (!root) return;
+
+    const slides = Array.from(root.querySelectorAll("[data-about-slide]"));
+    const dotsWrap = root.querySelector("[data-about-dots]");
+    if (!slides.length || !dotsWrap) return;
+
+    let index = 0;
+    let timer = null;
+    let startX = 0;
+    let dragging = false;
+
+    function render() {
+      slides.forEach((slide, i) => {
+        slide.style.opacity = i === index ? "1" : "0";
+      });
+      dotsWrap.querySelectorAll("button").forEach((dot, i) => {
+        dot.style.opacity = i === index ? "1" : "0.45";
+        dot.setAttribute("aria-current", i === index ? "true" : "false");
+      });
+    }
+
+    function goTo(nextIndex) {
+      index = (nextIndex + slides.length) % slides.length;
+      render();
+    }
+
+    function startAutoplay() {
+      stopAutoplay();
+      timer = setInterval(() => goTo(index + 1), 5000);
+    }
+
+    function stopAutoplay() {
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "h-2.5 w-2.5 rounded-full bg-white transition-opacity";
+      dot.setAttribute("aria-label", "Slajd " + (i + 1));
+      dot.addEventListener("click", () => {
+        goTo(i);
+        startAutoplay();
+      });
+      dotsWrap.appendChild(dot);
+    });
+
+    root.addEventListener("pointerdown", (e) => {
+      dragging = true;
+      startX = e.clientX;
+      stopAutoplay();
+    });
+
+    root.addEventListener("pointerup", (e) => {
+      if (!dragging) return;
+      const delta = e.clientX - startX;
+      dragging = false;
+      if (Math.abs(delta) > 40) {
+        goTo(delta < 0 ? index + 1 : index - 1);
+      }
+      startAutoplay();
+    });
+
+    root.addEventListener("pointerleave", () => {
+      if (!dragging) return;
+      dragging = false;
+      startAutoplay();
+    });
+
+    root.addEventListener("mouseenter", stopAutoplay);
+    root.addEventListener("mouseleave", startAutoplay);
+
+    render();
+    startAutoplay();
+  })();
+</script>
