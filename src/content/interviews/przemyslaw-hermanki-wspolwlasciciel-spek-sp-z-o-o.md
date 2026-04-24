@@ -3,10 +3,6 @@ title: "Przemysław Hermańki-Współwłaściciel SPEK Sp. z o.o."
 description: "Wywiad: Przemysław Hermańki-Współwłaściciel SPEK Sp. z o.o."
 ---
 
-# Przemysław Hermańki-Współwłaściciel SPEK Sp. z o.o.
-
-Source: /international/interviews/przemyslaw-hermanki-wspolwlasciciel-spek-sp-z-o-o/
-
 **BWL: W ostatnich latach coraz więcej obcokrajowców przyjeżdża do Europy, a tym sa****mym do Polski. Co jest tego powodem, że staliśmy się atrakcyjnym krajem dla imigrantów?**
 
 PH: Z biegiem lat zmienia się obraz polskich ulic, coraz bardziej widać różnorodność wśród ludzi. Zauważalne różnice to nie tylko te mentalne czy kulturowe, wyznaniowe czy polityczne, ale również różny kolor skóry czy sposób ubierania się. Dziś już nikogo nie dziwi obecność czarnoskórych osób przemierzających polskie ulice, które przyjeżdżają zarówno w celach kształcenia się, jak i w pogoni za lepszą pracą i zarobkami. Proszę sobie wyobrazić, że często za pensję zarobioną w polskim przedsiębiorstwie w krajach afrykańskich żyją całe rodziny. Dzięki naszemu położeniu geograficznemu staliśmy się łącznikiem między wschodem a Unią Europejską. Sytuacja związana z pandemią COVID-19 i zerwanie łańcuchów dostaw pokazała dużo słabości produkcji półfabrykatów, podzespołów w Chinach, a to spowodowało, że świat odwrócił wzrok w kierunku właśnie Polski, gdzie jak grzyby po deszczu powstają kolejne fabryki, które potrzebują coraz większych zasobów kadrowych. Cała ta sytuacja to istny raj dla rozwoju naszej gospodarki. Tylko że w każdej tej fabryce potrzebni są pracownicy i to właśnie jest powód, dla którego migracja tak bardzo przyśpieszyła.

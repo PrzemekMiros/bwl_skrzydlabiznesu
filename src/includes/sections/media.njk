@@ -1,0 +1,26 @@
+<section class="py-16" id="media">
+  <div class="mx-auto max-w-[1200px] px-6 md:px-24">
+    <div class="mb-12 text-center">
+      <h2 class="text-decor text-4xl font-semibold uppercase lg:text-6xl">Media</h2>
+    </div>
+    {% set mediaLogos = [
+      "Frame 1075.png",
+      "Frame 1076.png",
+      "Frame 1077.png",
+      "Frame 1078.png",
+      "Frame 1079.png",
+      "Frame 1080.png",
+      "Frame 1081.png",
+      "Frame 1082.png",
+      "Frame 1083.png",
+      "Frame 1084.png"
+    ] %}
+    <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+      {% for logo in mediaLogos %}
+        <figure class="flex h-24 items-center justify-center rounded-sm border border-black/10 bg-white p-4 shadow-sm">
+          <img eleventy:ignore src="/content/media/{{ logo }}" alt="{{ logo | replace('.png', '') | replace('-', ' ') }}" class="max-h-full w-auto object-contain" loading="lazy" decoding="async" draggable="false" />
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

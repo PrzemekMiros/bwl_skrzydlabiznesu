@@ -2,32 +2,32 @@
   "project": "International Businesswoman Awards",
   "navigation_main": [
     {
-      "label": "O PLEBISCYCIE",
-      "url": "/o-plebiscycie/"
+      "label": "O plebiscycie",
+      "url": "#o-plebiscycie"
     },
     {
-      "label": "MIEJSCE",
-      "url": "/miejsce/"
+      "label": "Nominowane osobowości",
+      "url": "#nominowane-osobowosci"
     },
     {
-      "label": "JURY",
-      "url": "/jury/"
+      "label": "Nominowane firmy",
+      "url": "#nominowane-firmy"
     },
     {
-      "label": "WYWIADY",
-      "url": "/interviews/"
+      "label": "Partnerzy",
+      "url": "#partnerzy"
     },
     {
-      "label": "GALERIA",
-      "url": "/galeria/"
+      "label": "Media",
+      "url": "#media"
     },
     {
-      "label": "MAGAZYN",
-      "url": "https://businesswomanlife.pl/"
+      "label": "Wywiady",
+      "url": "#wywiady"
     },
     {
-      "label": "KONTAKT",
-      "url": "/kontakt/"
+      "label": "Kontakt",
+      "url": "#kontakt"
     }
   ]
 }

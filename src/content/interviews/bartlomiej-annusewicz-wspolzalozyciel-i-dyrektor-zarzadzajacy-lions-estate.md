@@ -3,10 +3,6 @@ title: "Bartłomiej ANNUSEWICZ- Współzałożyciel i Dyrektor Zarządzający Li
 description: "Wywiad: Bartłomiej ANNUSEWICZ- Współzałożyciel i Dyrektor Zarządzający Lions Estate"
 ---
 
-# Bartłomiej ANNUSEWICZ- Współzałożyciel i Dyrektor Zarządzający Lions Estate
-
-Source: /international/interviews/bartlomiej-annusewicz-wspolzalozyciel-i-dyrektor-zarzadzajacy-lions-estate/
-
 **BWL: Zarządza Pan firmą, która jest najczęściej polecanym biurem nieruchomości  
 z segmentu premium (według „Forbesa”). Za co klienci tak bardzo Was cenią? Co trzeba zrobić, aby zasłużyć na takie wyróżnienie z ich strony?**
 

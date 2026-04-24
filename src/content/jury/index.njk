@@ -7,11 +7,10 @@ eleventyExcludeFromCollections: true
 ---
 
 <section class="mx-auto max-w-[1200px] py-16">
-  <div class="mb-8">
-    <p class="text-sm uppercase tracking-[0.2em] text-[#d4ab71]">Typ postu</p>
-    <h1 class="mt-2 text-3xl font-semibold uppercase tracking-[0.04em] text-[#0b0d1e]">Jury</h1>
-  </div>
-
+    <div class="mb-12">
+      <p class="mb-4 text-sm uppercase tracking-[0.2em] text-[#d4ab71]">Typ postu</p>
+      <h2 class="text-4xl font-semibold uppercase lg:text-6xl">Jury</h2>
+    </div>
   {% set members = collections.jury %}
   {% if members and members[0] %}
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

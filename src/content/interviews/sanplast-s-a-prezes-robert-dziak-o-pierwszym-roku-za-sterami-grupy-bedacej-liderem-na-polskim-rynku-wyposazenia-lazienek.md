@@ -3,10 +3,6 @@ title: "SANPLAST S.A. – PREZES ROBERT DZIAK O PIERWSZYM ROKU ZA STERAMI GRUPY,
 description: "Wywiad: SANPLAST S.A. – PREZES ROBERT DZIAK O PIERWSZYM ROKU ZA STERAMI GRUPY, BĘDĄCEJ LIDEREM NA POLSKIM RYNKU WYPOSAŻENIA ŁAZIENEK"
 ---
 
-# SANPLAST S.A. – PREZES ROBERT DZIAK O PIERWSZYM ROKU ZA STERAMI GRUPY, BĘDĄCEJ LIDEREM NA POLSKIM RYNKU WYPOSAŻENIA ŁAZIENEK
-
-Source: /international/interviews/sanplast-s-a-prezes-robert-dziak-o-pierwszym-roku-za-sterami-grupy-bedacej-liderem-na-polskim-rynku-wyposazenia-lazienek/
-
 **Grupa SANPLAST S.A. jest niekwestionowanym liderem branży sanitarnej w Polsce. Od lat dostarcza swoim Klientom najlepsze i najnowocześniejsze rozwiązania do wyposażenia łazienek. Sukces Firmy wynika z wieloletniego doświadczenia, wiedzy i doskonałych projektów, w których każdy detal ma znaczenie.**
 
 Marka zasłynęła przede wszystkim z tego, że jako pierwszy polski producent wprowadziła na rodzimy rynek kabinę prysznicową. Zdarzenie to, miało miejsce w 1991 roku. Od tego czasu produkt uległ licznym ewolucjom, ale bez dwóch zdań zrewolucjonizował polski rynek. **Od września 2019 roku za sterami SANPLAST S.A. zasiada Robert Dziak**, który zastąpił twórcę grupy Wiesława Podrazę. Kolejne dwanaście miesięcy przyniosło wiele wyzwań i sukcesów.

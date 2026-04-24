@@ -3,9 +3,6 @@ title: "KRYZYS TO ZAGROŻENIE, ALE TEŻ SZANSA"
 description: "Wywiad: KRYZYS TO ZAGROŻENIE, ALE TEŻ SZANSA"
 ---
 
-# KRYZYS TO ZAGROŻENIE, ALE TEŻ SZANSA
-
-Source: /international/interviews/kryzys-to-zagrozenie-ale-tez-szansa/
 
 ROZMOWA Z DR. MATEUSZEM GRZESIAKIEM, PSYCHOLOGIEM I WYKŁADOWCĄ AKADEMICKIM
 

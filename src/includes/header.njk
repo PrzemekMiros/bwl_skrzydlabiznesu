@@ -3,11 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skrzydła biznesu</title>
+    <title>{{ title or menu.project }}</title>
+    <meta name="description" content="{{ description or menu.project }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ menu.project }}" />
+    <meta property="og:title" content="{{ title or menu.project }}" />
+    <meta property="og:description" content="{{ description or menu.project }}" />
+    <meta property="og:image" content="/assets/img/opengraph.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="668" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ title or menu.project }}" />
+    <meta name="twitter:description" content="{{ description or menu.project }}" />
+    <meta name="twitter:image" content="/assets/img/opengraph.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body class="min-h-screen overflow-x-hidden">
+    <header class="bg-[#f1f1f1] text-slate-900">
+      <div class="mx-auto max-w-[1200px] px-4">
+        <div class="grid min-h-[84px] grid-cols-[1fr_auto_1fr] items-center py-4 md:h-[108px] md:py-0">
+          <div></div>
+            <div class="leading-none">
+               <a href="/">
+                <img src="/assets/img/logo/logo.png" class="h-auto w-[170px] sm:w-[340px]" alt="International Businesswoman Awards">
+               </a>
+            </div>
+          <div class="flex items-center justify-end gap-3 pr-1 sm:gap-4 sm:pr-3">
+            <a href="https://www.facebook.com/profile.php?id=100041555481268" aria-label="Facebook" class="text-[#232323] hover:text-black" target="_blank" rel="noopener">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> 
+                <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V10H8v3h2.4v8h3.1z"/>
+              </svg>
+            </a>
+            <a href="www.instagram.com/bizneswkobiecymstylu" aria-label="Instagram" class="text-[#232323] hover:text-black" target="_blank" rel="noopener">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.2" cy="6.8" r="1"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#171717] shadow-[inset_0_1px_0_rgba(255,255,255,0.07)]">
+        <div class="mx-auto max-w-[1200px] px-4 md:px-0">
+          <nav class="relative">
+            <details class="group md:hidden">
+              <summary class="flex h-[52px] cursor-pointer list-none items-center justify-between px-2 text-[13px] font-medium uppercase tracking-[0.08em] text-white">
+                <span>Menu</span>
+                <svg class="h-5 w-5 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </summary>
+              <ul class="border-t border-white/10 py-2">
+                {% for item in menu.navigation_main %}
+                  <li>
+                    <a
+                      href="{{ item.url }}"
+                      class="block px-3 py-3 text-[13px] font-medium uppercase tracking-[0.06em] text-white transition hover:bg-[#303030]"
+                    >
+                      {{ item.label }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </details>
 
+            <ul class="hidden items-stretch overflow-x-auto whitespace-nowrap md:flex">
+              {% for item in menu.navigation_main %}
+                <li class="{% if loop.first %}border-l-4 border-l-[#c59b52]{% endif %}">
+                  <a
+                    href="{{ item.url }}"
+                    class="flex h-[52px] items-center px-4 text-[13px] font-medium uppercase tracking-[0.06em] text-white transition hover:bg-[#303030] sm:h-[82px] sm:px-8 sm:text-[14px] {% if loop.first %}bg-[#232323]{% endif %}"
+                  >
+                    {{ item.label }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="h-[2px] w-full bg-[#111f72]"></div>
+    </header>

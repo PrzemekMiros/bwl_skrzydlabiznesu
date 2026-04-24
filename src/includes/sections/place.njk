@@ -1,43 +1,61 @@
-<section class="py-24">
-  <div class="mx-auto max-w-[1200px]">
-    <div class="mx-auto max-w-5xl text-center space-y-8">
-      <h2 class="text-4xl font-semibold uppercase lg:text-6xl">
+<section class="py-24 px-6 md:px-24" id="miejsce">
+  <div class="mx-auto max-w-[1400px]">
+    <div class="mx-auto max-w-6xl text-center space-y-8">
+      <h2 class="text-decor text-4xl font-semibold uppercase lg:text-6xl">
         Miejsce
       </h2>
-      <p>
-        Palazzo Brancaccio to imponujący pałac zlokalizowany w sercu Rzymu, przy Viale del Monte Oppio 7, tuż obok Koloseum i Bazylik San Giovanni oraz Santa Maria Maggiore. Wybudowany w latach 1880–1890 na zlecenie amerykańskiej arystokratki Mary Elizabeth Field, żony księcia Salvatore Brancaccio, będziecy ostatnią tak reprezentacyjną rezydencją w obrębie Murów Aurelijańskich. Architektura pałacu łączy styl neorenesansowy z bogatym neobarokowym wnętrzem, dekorowanym stiukami, złoceniami oraz freskami autorstwa Francesco Gaia. Wewnątrz znajdują się m.in. Sala Aniołów, Sala Arazzi, Galeria Luster i Sala Wielka – wielowymiarowe przestrzenie o wysokich, ozdobnych sufitach, lustrach i kryształowych żyrandolach. W ogrodzie pałacowym wznosi się nymfeum oraz stare drzewa i fontanny, a tzw. Casina di Caccia pełniła rolę eleganckiego „Coffee House”.
+      <p class="text-xl">
+        Palazzo Brancaccio to imponujący pałac zlokalizowany w sercu Rzymu, przy Viale del Monte Oppio 7, tuż obok Koloseum i Bazylik San Giovanni oraz Santa Maria Maggiore. Wybudowany w latach 1880–1890 na zlecenie amerykańskiej arystokratki Mary Elizabeth Field, żony księcia Salvatore Brancaccio. 
       </p>
-      <p>
+      <p class="text-xl">
+      Architektura pałacu łączy styl neorenesansowy z bogatym neobarokowym wnętrzem, dekorowanym stiukami, złoceniami oraz freskami autorstwa Francesco Gaia. Wewnątrz znajdują się m.in. Sala Aniołów, Sala Arazzi, Galeria Luster i Sala Wielka. W ogrodzie pałacowym wznosi się nymfeum oraz stare drzewa i fontanny, a tzw. Casina di Caccia pełniła rolę eleganckiego „Coffee House”.
+      </p>
+      <p class="text-xl">
         Przez lata służył jako tło dla filmów („Roman Holiday”, „Wielkie Piękno”) oraz ekskluzywnych przyjęć.
       </p>
-      <p>
-        Dziś Palazzo Brancaccio pełni funkcję przestrzeni kulturalno‑eventowej: można tu zwiedzać odnowione wnętrza (Spazio Field), uczestniczyć w wystawach, bankietach, kolacjach, recitalach i kameralnych spektaklach. Miejsce robi ogromne wrażenie.
-      </p>
+
     </div>
     {% if placeImages and placeImages.length %}
       <div class="mt-12 grid grid-flow-dense grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-6">
         {% for image in placeImages %}
-          {% set mod = loop.index0 % 10 %}
-          {% set tileClass = "col-span-1 aspect-[3/4]" %}
-          {% if mod == 0 or mod == 4 or mod == 7 %}
-            {% set tileClass = "col-span-2 aspect-[16/10]" %}
-          {% endif %}
+          {% if image and image.src and image.src.startsWith("/assets/place/") %}
+            {% set mod = loop.index0 % 10 %}
+            {% set tileClass = "col-span-1 aspect-[3/4]" %}
+            {% if mod == 0 or mod == 4 or mod == 7 %}
+              {% set tileClass = "col-span-2 aspect-[16/10]" %}
+            {% endif %}
 
-          <figure class="{{ tileClass }} group relative overflow-hidden rounded-sm">
-            <img
-              src="{{ image.src }}"
-              alt="{{ image.alt }}"
-              class="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
-              loading="lazy"
-              decoding="async"
-              draggable="false"
-            />
-            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/0"></div>
-          </figure>
+            <figure class="{{ tileClass }} group relative overflow-hidden rounded-sm">
+              <button
+                type="button"
+                class="lightbox-trigger block h-full w-full cursor-pointer"
+                data-lightbox-src="{{ image.src }}"
+                data-lightbox-alt="{{ image.alt }}"
+                data-lightbox-group="place-gallery"
+                aria-label="Otworz zdjecie: {{ image.alt }}"
+              >
+                <img
+                  src="{{ image.src }}"
+                  alt="{{ image.alt }}"
+                  class="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+                  eleventy:ignore
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                />
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/0"></div>
+              </button>
+            </figure>
+          {% endif %}
         {% endfor %}
       </div>
     {% else %}
       <p class="mt-10 text-center text-black/70">Brak zdjec miejsca.</p>
     {% endif %}
+      <div class="mx-auto max-w-6xl text-center mt-12">
+      <p class="text-xl">
+        Dziś Palazzo Brancaccio pełni funkcję przestrzeni kulturalno‑eventowej: można tu zwiedzać odnowione wnętrza (Spazio Field), uczestniczyć w wystawach, bankietach, kolacjach, recitalach i kameralnych spektaklach. Miejsce robi ogromne wrażenie.
+      </p>
+      </div>
   </div>
 </section>

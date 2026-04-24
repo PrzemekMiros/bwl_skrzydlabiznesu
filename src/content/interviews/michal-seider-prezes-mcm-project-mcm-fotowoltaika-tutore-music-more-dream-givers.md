@@ -3,9 +3,6 @@ title: "Michał Seider-Prezes MCM Project, MCM Fotowoltaika, Tutore, Music & Mor
 description: "Wywiad: Michał Seider-Prezes MCM Project, MCM Fotowoltaika, Tutore, Music & More, Dream Givers"
 ---
 
-# Michał Seider-Prezes MCM Project, MCM Fotowoltaika, Tutore, Music & More, Dream Givers
-
-Source: /international/interviews/michal-seider-prezes-mcm-project-mcm-fotowoltaika-tutore-music-more-dream-givers/
 
 **BWL: W jednym z wystąpień online stawia Pan pytanie o to, czy można zbudować firmę idealną. Pozwolę sobie więc dzisiaj zadać je Panu: czy jest możliwe zbudowanie firmy idealnej, a jeśli tak, to jak ona wygląda?**
 

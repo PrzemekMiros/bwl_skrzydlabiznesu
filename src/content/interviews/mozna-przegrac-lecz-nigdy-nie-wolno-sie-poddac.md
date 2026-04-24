@@ -3,10 +3,6 @@ title: "MOŻNA PRZEGRAĆ, LECZ NIGDY NIE WOLNO SIĘ PODDAĆ"
 description: "Wywiad: MOŻNA PRZEGRAĆ, LECZ NIGDY NIE WOLNO SIĘ PODDAĆ"
 ---
 
-# MOŻNA PRZEGRAĆ, LECZ NIGDY NIE WOLNO SIĘ PODDAĆ
-
-Source: /international/interviews/mozna-przegrac-lecz-nigdy-nie-wolno-sie-poddac/
-
 > **Mirosław Barszowski ceni sobie niezłomność w sporcie i pracy, szacunek dla innych, rodzinę. O tworzeniu, rozwoju, adeptach sztuk walki i chińskiej kaligrafii i malarstwa, a także o tym, co w życiu najważniejsze, opowiada w rozmowie z Katarzyną Kaszubską**
 
 **Można powiedzieć, że cytat z Konfucjusza: „Tysiącmilowa podróż zaczyna się od pierwszego kroku”, to Pana ulubione motto? Jak to było z Pana pierwszymi krokami? Może Pan opowiedzieć o początkach fascynacji chińskimi sztukami walki i kulturą Chin?**

@@ -1,0 +1,27 @@
+<section class="py-16 bg-gray-100" id="partnerzy">
+  <div class="mx-auto max-w-[1200px] px-6 md:px-24">
+    <div class="mb-12 text-center">
+      <h2 class="text-decor text-4xl font-semibold uppercase lg:text-6xl">Partnerzy</h2>
+    </div>
+    {% set partnerLogos = [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+      "9.png",
+      "10.png"
+    ] %}
+    <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+      {% for logo in partnerLogos %}
+        <figure class="flex h-24 items-center justify-center rounded-sm border border-black/10 bg-white p-4 shadow-sm">
+          <img src="/content/partners/img/{{ logo }}" alt="Partner {{ loop.index }}" class="max-h-full w-auto object-contain" loading="lazy" decoding="async" draggable="false" />
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+

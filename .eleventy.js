@@ -1,11 +1,24 @@
 ﻿const fs = require("fs");
 const path = require("path");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: "html",
+    formats: ["webp", "jpeg"],
+    widths: ["auto"],
+    urlPath: "/assets/optimized/",
+    failOnError: false
+  });
+
   // Kopiuj pliki statyczne
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/content/interviews/img");
   eleventyConfig.addPassthroughCopy("src/content/jury/img");
+  eleventyConfig.addPassthroughCopy("src/content/nominowane-osobistosci/img");
+  eleventyConfig.addPassthroughCopy("src/content/nominowane-firmy/img");
+  eleventyConfig.addPassthroughCopy("src/content/partners/img");
+  eleventyConfig.addPassthroughCopy("src/content/media");
   eleventyConfig.addPassthroughCopy({
     "src/content/gallery/img": "assets/gallery",
     "src/content/place/img": "assets/place"
@@ -67,6 +80,17 @@ module.exports = function(eleventyConfig) {
     "zbudowalam-najwieksza-w-polsce-firme-medyczna-beata-drzazga-prezes-betamed-s-a": "/content/interviews/img/Beata-Drzazga_.jpeg"
   });
 
+  eleventyConfig.addGlobalData("nominatedCompanyImagesBySlug", {
+    default: "/content/nominowane-firmy/img/amica.png",
+    "amica-905": "/content/nominowane-firmy/img/amica.png",
+    "bialy-kamien-918": "/content/nominowane-firmy/img/bialykamien.jpg",
+    "fjordd-908": "/content/nominowane-firmy/img/fjordd.jpg",
+    "jabra-911": "/content/nominowane-firmy/img/jabra.png",
+    "revers-cosmetics-902": "/content/nominowane-firmy/img/revers.png",
+    "techniprot-922": "/content/nominowane-firmy/img/techniprot.jpg",
+    "villahus-915": "/content/nominowane-firmy/img/villahus.png"
+  });
+
   // Wlasny typ wpisow: interviews
   eleventyConfig.addCollection("interviewsCollection", function(collectionApi) {
     const items = collectionApi
@@ -74,6 +98,30 @@ module.exports = function(eleventyConfig) {
       .filter((item) => {
         const normalized = item.inputPath.replace(/\\/g, "/");
         return normalized.includes("src/content/interviews/") && normalized.endsWith(".md");
+      })
+      .sort((a, b) => b.date - a.date);
+    return items;
+  });
+
+  // Wlasny typ wpisow: nominowane osobistosci
+  eleventyConfig.addCollection("nominatedPersonalities", function(collectionApi) {
+    const items = collectionApi
+      .getAll()
+      .filter((item) => {
+        const normalized = item.inputPath.replace(/\\/g, "/");
+        return normalized.includes("src/content/nominowane-osobistosci/") && normalized.endsWith(".md");
+      })
+      .sort((a, b) => b.date - a.date);
+    return items;
+  });
+
+  // Wlasny typ wpisow: nominowane firmy
+  eleventyConfig.addCollection("nominatedCompanies", function(collectionApi) {
+    const items = collectionApi
+      .getAll()
+      .filter((item) => {
+        const normalized = item.inputPath.replace(/\\/g, "/");
+        return normalized.includes("src/content/nominowane-firmy/") && normalized.endsWith(".md");
       })
       .sort((a, b) => b.date - a.date);
     return items;
@@ -98,5 +146,3 @@ module.exports = function(eleventyConfig) {
     dataTemplateEngine: "njk"
   };
 };
-
-

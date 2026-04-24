@@ -3,9 +3,6 @@ title: "Maciej Orłoś- dziennikarz, prezenter, szkoleniowiec"
 description: "Wywiad: Maciej Orłoś- dziennikarz, prezenter, szkoleniowiec"
 ---
 
-# Maciej Orłoś- dziennikarz, prezenter, szkoleniowiec
-
-Source: /international/interviews/maciej-orlos-dziennikarz-prezenter-szkoleniowiec/
 
 **BWL: Przez dwadzieścia pięć lat był Pan twarzą „Teleexpresu”. Gdy program debiutował w telewizyjnej ramówce, wprowadzał w polskich mediach absolutnie nową jakość. Jakie to uczcie być mediowym trendsetterem?**
 

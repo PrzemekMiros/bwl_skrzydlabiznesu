@@ -1,11 +1,8 @@
 ---
-title: "klasyka ze szczypta nowoczesnosci"
+title: "Klasyka ze szczyptą nowoczesności"
 description: "Wywiad: klasyka ze szczypta nowoczesnosci"
 ---
 
-﻿# Klasyka ze szczyptą nowoczesności
-
-Source: /international/interviews/klasyka-ze-szczypta-nowoczesnosci/
 
 W RESTAURACJI AKADEMIA MOŻNA NIE TYLKO FANTASTYCZNIE ZJEŚĆ, ALE RÓWNIEŻ POROZMAWIAĆ O BOGATEJ POLSKIEJ TRADYCJI KULINARNEJ I KULTURALNEJ. O IDEI SPOTKAŃ KULINARNYCH I WYJĄTKOWYM MENU AKADEMII OPOWIADA JEJ WŁAŚCICIEL **ANDRZEJ STERNICKI**
 

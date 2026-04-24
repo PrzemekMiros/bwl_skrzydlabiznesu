@@ -3,10 +3,6 @@ title: "„ZBUDOWAŁAM NAJWIĘKSZĄ W POLSCE FIRMĘ MEDYCZNĄ” – BEATA DRZAZ
 description: "Wywiad: „ZBUDOWAŁAM NAJWIĘKSZĄ W POLSCE FIRMĘ MEDYCZNĄ” – BEATA DRZAZGA – PREZES BETAMED S.A."
 ---
 
-# „ZBUDOWAŁAM NAJWIĘKSZĄ W POLSCE FIRMĘ MEDYCZNĄ” – BEATA DRZAZGA – PREZES BETAMED S.A.
-
-Source: /international/interviews/zbudowalam-najwieksza-w-polsce-firme-medyczna-beata-drzazga-prezes-betamed-s-a/
-
 **Zbudowała Pani największą w Polsce firmę medyczną zajmująca się opieką długoterminową w domu u pacjenta oraz stacjonarnie w klinice. Jak powstała ta niezwykła koncepcja usług medycznych?**
 
 Choć może trudno w to uwierzyć, ale ta koncepcja narodziła się dawno temu, jeszcze w dzieciństwie, i dojrzewała razem ze mną. Już jako kilkulatka patrzyłam z podziwem na osoby w medycznych fartuchach, na co dzień z uwagą obserwowałam moją ciocię, która była pielęgniarką. Marzenie, aby pewnego dnia dołączyć do tych wspaniałych ludzi ratujących zdrowie i życie nie opuszczało mnie nigdy. Dlatego skończyłam liceum pielęgniarskie i zaczęłam tę wymarzoną pracę. Szybko jednak odkryłam, że chciałam dać lepszą opiekę pacjentom – taką, jaką powinni otrzymać w placówce medycznej.

@@ -3,10 +3,6 @@ title: "ROZBUDZIŁA KOBIECOŚĆ W POLSKICH KOBIETACH! POZNAJCIE LEĘ M. PYĆ-LES
 description: "Wywiad: ROZBUDZIŁA KOBIECOŚĆ W POLSKICH KOBIETACH! POZNAJCIE LEĘ M. PYĆ-LESZCZUK, CZYLI ŚWIADOMĄ BOGINIĘ ZNANĄ Z PROGRAMU „RÓWNI SOBIE”"
 ---
 
-# ROZBUDZIŁA KOBIECOŚĆ W POLSKICH KOBIETACH! POZNAJCIE LEĘ M. PYĆ-LESZCZUK, CZYLI ŚWIADOMĄ BOGINIĘ ZNANĄ Z PROGRAMU „RÓWNI SOBIE”
-
-Source: /international/interviews/rozbudzila-kobiecosc-w-polskich-kobietach-poznajcie-lee-m-pyc-leszczuk-czyli-swiadoma-boginie-znana-z-programu-rowni-sobie/
-
 **Swój plan na uświadamianie innych kobiet o tym, jak być szczęśliwą realizuje od kilku lat. Początkowo radziła bliskim koleżankom z otoczenia. Później nadszedł czas na książkę, która już stała się hitem w polskiej blogosferze. Jak sama uważa, w życiu towarzyszy jej pomyślność, a nie ma nic piękniejszego niż dzielić się tym, co dobrego zesłał na nas los. Książkę „Świadoma Bogini. Jak zdobyć wszystko i być szczęśliwą” Lei M.Pyć-Leszczuk polecają m.in. Daria Ładocha czy Marta Gąska. Autorka książki wystąpiła ostatnio w produkcji TVN „Równi sobie”, czym zyskała ogromną sympatię wśród widzów.**
 
 Według Lei kluczem do szczęścia jest poszukiwanie harmonii we wszystkich strefach życia. Kobieta może czuć się spełnioną jednocześnie jako żona, matka czy businesswoman. Rozpoczynamy od zastanowienia się nad naszymi złymi nawykami, przekonaniami itp., które zostały zaszczepione w nas w dzieciństwie. Zerwanie ze schematami myślowymi pozwala na nowe spojrzenie na codzienne sprawy. Na to, że możemy stworzyć związek oparty na partnerstwie, mieć czas na zabawę z dziećmi czy zdobyć niebywały sukces zawodowy. Ważne jest wyeliminowanie tego, co negatywnie wpływa na jakość naszego życia. Mówienie i niezapominanie o swoich potrzebach, dzielenie się obowiązkami z partnerem, którego traktujemy jako równego sobie i przeprowadzenie porządków w swoim otoczeniu. To początek drogi do spełnienia.
