@@ -1,17 +1,9 @@
----
+﻿---
+layout: "company.njk"
 title: "VillaHus"
 excerpt: "VillaHus to sklep specjalizujący się w sprzedaży designerskich akcesoriów do drzwi, okien i uchwytów meblowych."
 companyImage: "/src/content/nominowane-firmy/img/15.png"
 ---
-
-# VILLAHUS
-
-- ID: 915
-- Slug: villahus
-- Data publikacji: 2021-11-24 21:56:24
-- Status: publish
-
-## Opis
 
 ### Klamka to najlepsza biżuteria dla drzwi
 

@@ -1,17 +1,9 @@
----
+﻿---
+layout: "nominee.njk"
 title: "Marieta Zukowska"
 excerpt: "Aktorka filmowa i teatralna mlodego pokolenia, absolwentka PWSFTviT w Lodzi."
 juryImage: "/src/content/nominowane-osobistosci/img/Marieta-Zukowska.jpg"
 ---
-
-# Marieta Żukowska
-
-- ID: 878
-- Slug: marieta-zukowska
-- Data publikacji: 2023-09-24 21:33:48
-- Status: publish
-
-## Opis
 
 Jedna z najbardziej utalentowanych aktorek filmowych i teatralnych młodego pokolenia. Absolwentka Wydziału Aktorskiego Państwowej Wyższej Szkoły Filmowej, Telewizyjnej i Teatralnej w Łodzi. Członek Polskiej Akademii Filmowej.
 

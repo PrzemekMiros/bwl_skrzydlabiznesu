@@ -1,19 +1,13 @@
----
+﻿---
+layout: "company.njk"
 title: "Techniprot"
 excerpt: "Techniprot, działający od 1955 roku, jest liderem produkcji rozdzielaczy do nowoczesnych instalacji centralnego ogrzewania i wody."
 companyImage: "/src/content/nominowane-firmy/img/13.png"
 ---
 
-# TECHNIPROT
+Techniprot powstał w 1955 r. na bazie i tradycjach pruszkowskiego rzemiosła, a jego nazwę przyjęto od techniki prototypowej. Ambicją zakładu była zawsze trudna, niepowtarzalna produkcja prototypowa i małoseryjna. Tradycja, fachowa i doświadczona załoga, prywatna własność oraz okazały potencjał produkcyjny są siłą sprawczą bogatej oferty naszych wyrobów używanych w nowoczesnych instalacjach centralnego ogrzewania i wody. 
 
-- ID: 922
-- Slug: techniprot
-- Data publikacji: 2021-11-24 22:01:24
-- Status: publish
-
-## Opis
-
-Techniprot powstał w 1955 r. na bazie i tradycjach pruszkowskiego rzemiosła, a jego nazwę przyjęto od techniki prototypowej. Ambicją zakładu była zawsze trudna, niepowtarzalna produkcja prototypowa i małoseryjna. Tradycja, fachowa i doświadczona załoga, prywatna własność oraz okazały potencjał produkcyjny są siłą sprawczą bogatej oferty naszych wyrobów używanych w nowoczesnych instalacjach centralnego ogrzewania i wody. Techniprot jako pierwszy w Polsce w 1991 r. podjął produkcję rozdzielaczy i aktualnie jest niekwestionowanym liderem w ich produkcji. Od początku postawiliśmy na jakość i różnorodność rozwiązań konstrukcyjnych i wykonawczych, by zaspokoić oczekiwania nawet najbardziej wymagających klientów. Oferujemy Państwu wyroby posiadające niezbędne badania jakościowe, charakterystyki, opinie i aprobaty techniczne. Wyroby nasze gwarantują niezawodność i funkcjonalność, a fachowa i miła obsługa dają podstawy dobrej współpracy z naszymi klientami.
+Techniprot jako pierwszy w Polsce w 1991 r. podjął produkcję rozdzielaczy i aktualnie jest niekwestionowanym liderem w ich produkcji. Od początku postawiliśmy na jakość i różnorodność rozwiązań konstrukcyjnych i wykonawczych, by zaspokoić oczekiwania nawet najbardziej wymagających klientów. Oferujemy Państwu wyroby posiadające niezbędne badania jakościowe, charakterystyki, opinie i aprobaty techniczne. Wyroby nasze gwarantują niezawodność i funkcjonalność, a fachowa i miła obsługa dają podstawy dobrej współpracy z naszymi klientami.
 
 ### Cechy wyróżniające rozdzielacze Techniprot
 

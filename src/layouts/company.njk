@@ -1,10 +1,11 @@
 ﻿{% include "header.njk" %}
 <main class="mx-auto max-w-[1200px] px-6 py-14 md:px-10">
-  {% set nomineeImage = (juryImage or "") | replace("/src/content/", "/content/") | replace("src/content/", "/content/") %}
+  {% set mappedCompanyImage = nominatedCompanyImagesBySlug[page.fileSlug] or nominatedCompanyImagesBySlug.default %}
+  {% set companyImageResolved = (companyImage or mappedCompanyImage or "") | replace("/src/content/", "/content/") | replace("src/content/", "/content/") %}
 
   <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_420px] lg:gap-12">
     <section>
-      <p class="text-sm uppercase tracking-[0.18em] text-[#d4ab71]">Nominowana osobowosc</p>
+      <p class="text-sm uppercase tracking-[0.18em] text-[#d4ab71]">Nominowana firma</p>
       <h1 class="mt-3 text-4xl font-semibold leading-tight text-[#0b0d1e]">{{ title }}</h1>
       {% if excerpt %}
         <p class="mt-4 text-black/80">{{ excerpt }}</p>
@@ -15,9 +16,9 @@
       </article>
     </section>
 
-    {% if nomineeImage %}
+    {% if companyImageResolved %}
       <aside class="lg:sticky lg:top-[80px] lg:self-start">
-        <img src="{{ nomineeImage }}" alt="{{ title }}" class="h-auto w-full rounded-2xl object-cover" loading="lazy" decoding="async" draggable="false" />
+        <img src="{{ companyImageResolved }}" alt="{{ title }}" class="h-auto w-full rounded-2xl object-cover" loading="lazy" decoding="async" draggable="false" />
       </aside>
     {% endif %}
   </div>

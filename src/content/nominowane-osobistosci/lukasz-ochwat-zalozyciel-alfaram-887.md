@@ -1,17 +1,9 @@
----
+﻿---
+layout: "nominee.njk"
 title: "Lukasz Ochwat - zalozyciel Alfaram"
 excerpt: "Zalozyciel marki Alfaram, producenta luster ozdobnych o wyjatkowej estetyce."
 juryImage: "/src/content/nominowane-osobistosci/img/Lukasz-Ochwat.jpg"
 ---
-
-# Łukasz Ochwat - założyciel Alfaram
-
-- ID: 887
-- Slug: lukasz-ochwat-zalozyciel-alfaram
-- Data publikacji: 2021-11-24 21:40:22
-- Status: publish
-
-## Opis
 
 Założyciel marki Alfaram. Firma Alfaram zajmuje się produkcją luster ozdobnych o wyjątkowej estetyce – luster eleganckich i nowoczesnych pasujących do każdego wnętrza. Firma Alfaram powstała w 2013 roku.  Produkcja lokalna bardzo szybko przekształciła się w regionalną, a następnie w krajową. Obecnie jesteśmy producentem krajowym i zagranicznym.
 

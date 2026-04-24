@@ -5,6 +5,10 @@
     font-family: "Oswald", sans-serif;
   }
 
+  .menu-font {
+    font-family: "Oswald", sans-serif;
+  }
+
    .text-decor {
     display: flex;
     width: fit-content;
@@ -18,7 +22,7 @@
   .text-decor::before,
   .text-decor::after {
     content: "";
-    width: clamp(56px, 8vw, 100px);
+    width: clamp(26px, 8vw, 100px);
     height: 2px;
     flex: 0 0 auto;
     background: #d0a261;

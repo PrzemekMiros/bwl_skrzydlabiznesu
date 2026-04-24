@@ -1,17 +1,9 @@
----
+﻿---
+layout: "nominee.njk"
 title: "Beata Drzazga"
 excerpt: "Zalozycielka i wlascicielka najwiekszej firmy medycznej w Polsce BetaMed SA."
 juryImage: "/src/content/nominowane-osobistosci/img/trim-Drzazga_.jpg"
 ---
-
-# Beata Drzazga
-
-- ID: 860
-- Slug: beata-drzazga
-- Data publikacji: 2021-11-24 01:04:49
-- Status: publish
-
-## Opis
 
 Założycielka i właścicielka największej Firmy Medycznej w Polsce BetaMed SA, świadczącej usługi medyczne w domu pacjenta i w Clinice Centrum Medycznym w Chorzowie.  Zatrudnia ok. 3000 osób, opiekuje się ponad 5000 pacjentów. Posiada 91 filii opieki domowej w 11. woje­wództwach w Polsce.
 
