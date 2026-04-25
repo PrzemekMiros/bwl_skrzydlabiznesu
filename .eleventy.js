@@ -93,13 +93,32 @@ module.exports = function(eleventyConfig) {
 
   // Wlasny typ wpisow: interviews
   eleventyConfig.addCollection("interviewsCollection", function(collectionApi) {
+    const parseFrontmatterDate = (item) => {
+      if (!item?.data?.date) {
+        return null;
+      }
+      const timestamp = new Date(item.data.date).getTime();
+      return Number.isNaN(timestamp) ? null : timestamp;
+    };
+
     const items = collectionApi
       .getAll()
       .filter((item) => {
         const normalized = item.inputPath.replace(/\\/g, "/");
         return normalized.includes("src/content/interviews/") && normalized.endsWith(".md");
       })
-      .sort((a, b) => b.date - a.date);
+      .sort((a, b) => {
+        const aDate = parseFrontmatterDate(a);
+        const bDate = parseFrontmatterDate(b);
+
+        if (aDate !== null || bDate !== null) {
+          if (aDate === null) return 1;
+          if (bDate === null) return -1;
+          if (aDate !== bDate) return bDate - aDate;
+        }
+
+        return a.fileSlug.localeCompare(b.fileSlug, "pl", { sensitivity: "base" });
+      });
     return items;
   });
 
