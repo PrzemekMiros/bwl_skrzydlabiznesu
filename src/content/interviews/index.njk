@@ -19,7 +19,7 @@ permalink: /interviews/
           {% set interviewImage = (interview.data.postImage or mappedInterviewImage or "") | replace("/src/content/", "/content/") | replace("src/content/", "/content/") %}
           {% if interviewImage %}
             <a href="{{ interview.url }}" class="mb-5 block overflow-hidden rounded-2xl">
-              <img src="{{ interviewImage }}" alt="{{ interview.data.title }}" class="h-[220px] w-full object-cover" loading="lazy" decoding="async" draggable="false" />
+              <img src="{{ interviewImage }}" alt="{{ interview.data.title }}" class="h-[220px] w-full object-cover object-top" loading="lazy" decoding="async" draggable="false" />
             </a>
           {% endif %}
           <h2 class="text-xl font-semibold text-[#0b0d1e]">
